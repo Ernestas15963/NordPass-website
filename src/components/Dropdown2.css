@@ -1,0 +1,140 @@
+.drop-top {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 96px;
+  width: 43%;
+  margin: 0 auto;
+}
+
+details [open] summary ~ * {
+  animation: open 0.3 ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  list-style: none;
+  line-height: 1.5rem;
+  background-color: var(--mid);
+}
+
+details summary:after {
+  content: "˅";
+  color: #383c43;
+  position: absolute;
+  font-size: 1rem;
+  line-height: 0;
+  margin-right: 21.64px;
+  margin-top: 10px;
+  right: 0;
+  font-weight: 700;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+
+details[open] summary:after {
+  transform: rotate(180deg);
+}
+
+details summary {
+  outline: 0;
+}
+
+details {
+  margin-bottom: 12px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.content p {
+  font-size: 1rem;
+  width: 100%;
+  padding: 1rem;
+  line-height: 2rem;
+  background-color: var(--mid);
+}
+
+@media screen and (max-width: 1220px) {
+  section {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  section {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  section {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  section {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  details summary {
+    font-size: 0.75rem;
+  }
+  .content p {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  details summary {
+    font-size: 0.55rem;
+  }
+  .content p {
+    font-size: 0.55rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  details summary {
+    font-size: 0.45rem;
+  }
+  .content p {
+    font-size: 0.45rem;
+  }
+}

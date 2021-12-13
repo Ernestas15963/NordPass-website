@@ -1,13 +1,27 @@
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+@import url(//db.onlinewebfonts.com/c/0825e48b888e2966c14f17034b133d07?family=Gordita);
+
+body {
+  font-family: "Gordita", cursive;
+  font-style: normal;
+  font-size: 16px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Gordita", cursive;
+}
+
+:root {
+  --top: #edf8f7;
+  --mid: #ffffff;
+  --bot: #f8f8f8;
+  --text: #151922;
+  --text-color: #43a5a1;
 }

@@ -1,0 +1,89 @@
+.help {
+  max-width: 1143px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.pass {
+  border-bottom: 1px solid #e8e8e9;
+  border-top: 1px solid #e8e8e9;
+  line-height: 72px;
+  margin: 0 auto;
+}
+
+.help-top h6 {
+  font-size: 1.25rem;
+  color: #373b42;
+  line-height: 1.875rem;
+}
+
+.pass,
+.help-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  background: var(--mid);
+  border: 1px solid #b9babd;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 42px;
+  width: 22.84%;
+  margin-bottom: 24px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+}
+
+.pass p {
+  font-size: 1rem;
+  color: #383c43;
+  font-weight: 400;
+}
+
+span {
+  margin-right: 28px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.help-btn {
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--mid);
+  font-size: 1rem;
+  line-height: 2rem;
+  border-radius: 3px;
+  border: none;
+  padding: 9px 20px;
+  margin-top: 36px;
+  margin-bottom: 96px;
+}
+
+.help-btn:hover {
+  color: var(--text);
+}
+
+.help-header {
+  padding-bottom: 60px;
+  padding-top: 91px;
+}
+
+.new {
+  width: 20%;
+}
+
+@media screen and (max-width: 450px) {
+  select {
+    width: 30%;
+  }
+}
